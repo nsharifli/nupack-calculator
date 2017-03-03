@@ -2,7 +2,7 @@ var NuPackCalculator = require("./nupack-calculator");
 
 
 var runTest = function(testCase) {
-    var result = NuPackCalculator.markupCalculator(testCase.input);
+    var result = NuPackCalculator.calculateMarkup(testCase.input);
     if (result !== testCase.output) {
         console.log(testCase.label + ": FAIL. Expected: " + testCase.output + "; Actual: " + result);
     }
